@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome to the BDM Notes Hub
+title: Welcome to BDM Notes
 ---
 
 This is a cleanly organized hub for the **Business Data Management** course notes. 
