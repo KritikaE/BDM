@@ -15,8 +15,8 @@ This section covers the foundational topics from **Weeks 1 through 4**.
 <br>
 
 <div style="text-align: center; margin-top: 30px;">
-  <a href="{{ '/pdfs/BDM_week1to4_Notes.pdf' | relative_url }}" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1em; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: opacity 0.2s;">
-    📑 Open Quiz 1 Notes PDF
-  </a>
+  <a href="/BDM/pdfs/BDM_week1to4_Notes.pdf" target="_blank">
+  📑 Open Quiz 1 Notes PDF
+</a>
   <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Opens securely in a new tab</p>
 </div>
