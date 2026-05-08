@@ -4,32 +4,19 @@ title: End Term
 permalink: /endterm/
 ---
 
-<div style="max-width: 950px; margin: 0 auto; padding: 20px;">
-
-<div style="background-color: #e7f3ff; border-left: 5px solid #b6d4fe; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
-<strong>📘 Weeks 9–12 Notes:</strong> Covers important concepts from HR, FinTech, A/B Testing, Credit Risk, and related topics.
-</div>
-
-<h1 style="margin-top:0;">📚 Notes (Weeks 9–12)</h1>
-
-<p style="color:#666; margin-bottom:25px;">
-Structured notes for revision and conceptual understanding.
-</p>
-
-<!-- PASTE YOUR HTML CODE BELOW -->
-
-<div style="background:white; padding:25px; border-radius:12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border:1px solid #eee;">
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>End Term Exam Notes – Week 9–12</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Inter',sans-serif;font-size:13.5px;line-height:1.7;color:#1a1a2e;background:#fff;padding:32px 40px}
-  h1{font-size:24px;font-weight:900;color:#fff;background:linear-gradient(135deg,#1a1a2e,#16213e);padding:20px 24px;border-radius:10px;margin-bottom:6px;letter-spacing:.3px}
+  .endterm-wrapper{
+  font-family:'Inter',sans-serif;
+  font-size:14px;
+  line-height:1.7;
+  color:#1a1a2e;
+  background:#fff;
+  padding:32px 40px;
+  border-radius:12px;
+}
+  h1{font-size:22px;font-weight:900;color:#fff;background:linear-gradient(135deg,#1a1a2e,#16213e);padding:20px 24px;border-radius:10px;margin-bottom:6px;letter-spacing:.3px}
   .subtitle{font-size:12px;color:#555;margin-bottom:28px;padding-left:4px}
   /* TOC */
   .toc{background:#f0f4ff;border-left:4px solid #4361ee;border-radius:8px;padding:16px 20px;margin-bottom:32px}
@@ -63,7 +50,14 @@ Structured notes for revision and conceptual understanding.
   ol{padding-left:20px;margin:6px 0}
   ol li{margin:4px 0}
   /* Tables */
-  table{width:100%;border-collapse:collapse;font-size:12.5px;margin:10px 0}
+  table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:12.5px;
+  margin:10px 0;
+  display:block;
+  overflow-x:auto;
+}
   th{background:#4361ee;color:#fff;padding:7px 10px;text-align:left;font-weight:600}
   td{padding:6px 10px;border-bottom:1px solid #e8ecf5}
   tr:nth-child(even) td{background:#f8f9ff}
@@ -94,9 +88,8 @@ Structured notes for revision and conceptual understanding.
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   @media(max-width:600px){.two-col,.cheat-grid{grid-template-columns:1fr}}
 </style>
-</head>
-<body>
 
+<div class="endterm-wrapper">
 <h1>📚 End-Term Exam Notes — Week 9 to 12</h1>
 <p class="subtitle">HR, Fintech, Analytics, A/B Testing, Credit Risk &amp; Business Operations | Comprehensive Study Guide</p>
 
@@ -680,9 +673,7 @@ Structured notes for revision and conceptual understanding.
   <p style="text-align:center;font-size:11px;color:#aaa;margin-top:18px">📄 To save as PDF: Press Ctrl+P (Cmd+P on Mac) → Save as PDF → Set margins to Minimum</p>
 </div>
 
-</body>
-</html>
-
 </div>
 
+</div>
 </div>
