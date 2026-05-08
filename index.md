@@ -11,9 +11,9 @@ This is a cleanly organized hub for the **Business Data Management** course note
 
 ### Study Materials
 
-- **[Quiz 1 Topics (Weeks 1–4)]({{ '/quiz1/' | relative_url }})**
-- **[Quiz 2 Topics (Weeks 5–8)]({{ '/quiz2/' | relative_url }})**
-- **[End Term Topics (Coming soon)]({{ '/endterm/' | relative_url }})**
+- **[Quiz 1 Topics (Weeks 1-4)]({{ '/quiz1/' | relative_url }})**
+- **[Quiz 2 Topics (Weeks 5-8)]({{ '/quiz2/' | relative_url }})**
+- **[End Term Topics (Week 9-12)]({{ '/endterm/' | relative_url }})**
 - **[Topics from Live Sessions]({{ '/livesessions/' | relative_url }})**
 
 ### Additional Resources
