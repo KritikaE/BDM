@@ -66,8 +66,8 @@ permalink: /endterm/
   }
 
   th{
-    background:#4361ee;
-    color:white;
+    background:#dbeafe;
+    color:#1e3a8a;
     padding:8px 10px;
     text-align:left;
   }
@@ -90,7 +90,7 @@ permalink: /endterm/
 
   .week-badge{
     background:linear-gradient(135deg,#4361ee,#7209b7);
-    color:#fff;
+    color:#111827;
     font-size:11px;
     font-weight:700;
     padding:4px 12px;
@@ -201,8 +201,8 @@ permalink: /endterm/
 }
 
 .cheat-wrap{
-  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
-  color:#fff;
+  background:#f8fafc;
+  color:#1e293b;
   border-radius:12px;
   padding:24px 28px;
   margin-top:36px;
@@ -215,20 +215,20 @@ permalink: /endterm/
 }
 
 .cheat-card{
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.15);
+  background:#ffffff;
+  border:1px solid #e2e8f0;
   border-radius:8px;
   padding:12px 14px;
 }
 
 .cheat-card h4{
-  color:#ffd166;
+  color:#1e3a8a;
   margin-bottom:8px;
 }
 
 .cheat-formula{
   font-family:monospace;
-  background:rgba(255,255,255,.12);
+  background:#eef2ff;
   border-radius:6px;
   padding:6px 10px;
   margin:6px 0;
@@ -849,7 +849,7 @@ permalink: /endterm/
     </div>
 
   </div>
-  <p style="text-align:center;font-size:11px;color:#aaa;margin-top:18px">📄 To save as PDF: Press Ctrl+P (Cmd+P on Mac) → Save as PDF → Set margins to Minimum</p>
+  <p style="text-align:center;font-size:11px;color:#475569;;margin-top:18px">📄 To save as PDF: Press Ctrl+P (Cmd+P on Mac) → Save as PDF → Set margins to Minimum</p>
 </div>
 
 </div>
