@@ -674,6 +674,4 @@ permalink: /endterm/
 </div>
 
 </div>
-
-</div>
 </div>
