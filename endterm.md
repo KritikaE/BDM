@@ -201,8 +201,8 @@ permalink: /endterm/
 }
 
 .cheat-wrap{
-  background:#f8fafc;
-  color:#1e293b;
+  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  color:#fff;
   border-radius:12px;
   padding:24px 28px;
   margin-top:36px;
@@ -215,20 +215,20 @@ permalink: /endterm/
 }
 
 .cheat-card{
-  background:#ffffff;
+  background:rgba(255,255,255,.08);
   border:1px solid #e2e8f0;
   border-radius:8px;
   padding:12px 14px;
 }
 
 .cheat-card h4{
-  color:#1e3a8a;
+  color:#ffe082;
   margin-bottom:8px;
 }
 
 .cheat-formula{
   font-family:monospace;
-  background:#eef2ff;
+  background:rgba(255,255,255,.12);
   border-radius:6px;
   padding:6px 10px;
   margin:6px 0;
@@ -248,13 +248,6 @@ permalink: /endterm/
 </style>
 
 <div class="endterm-wrapper">
-
-  <!-- TITLE CARD -->
-
-  <div class="content-card">
-    <h1 class="main-title">End-Term Notes</h1>
-    <p class="subtitle">Weeks 9 through 12</p>
-  </div>
 
   <!-- TOPICS CARD -->
 
