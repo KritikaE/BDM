@@ -6,92 +6,271 @@ permalink: /endterm/
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
-  *{margin:0;padding:0;box-sizing:border-box}
-  .endterm-wrapper{
-  font-family:'Inter',sans-serif;
-  font-size:14px;
-  line-height:1.7;
-  color:#1a1a2e;
-  background:#fff;
-  padding:32px 40px;
-  border-radius:12px;
-}
-  h1{font-size:22px;font-weight:900;color:#fff;background:linear-gradient(135deg,#1a1a2e,#16213e);padding:20px 24px;border-radius:10px;margin-bottom:6px;letter-spacing:.3px}
-  .subtitle{font-size:12px;color:#555;margin-bottom:28px;padding-left:4px}
-  /* TOC */
-  .toc{background:#f0f4ff;border-left:4px solid #4361ee;border-radius:8px;padding:16px 20px;margin-bottom:32px}
-  .toc h2{font-size:13px;font-weight:700;color:#4361ee;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
-  .toc a{display:inline-block;color:#1a1a2e;text-decoration:none;font-size:12.5px;margin:2px 14px 2px 0;padding:2px 8px;background:#dde5ff;border-radius:4px}
-  .toc a:hover{background:#4361ee;color:#fff}
-  /* Week headers */
-  .week-header{display:flex;align-items:center;gap:12px;margin:36px 0 18px}
-  .week-badge{background:linear-gradient(135deg,#4361ee,#7209b7);color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;white-space:nowrap;letter-spacing:.5px}
-  .week-title{font-size:19px;font-weight:800;color:#1a1a2e}
-  /* Sections */
-  .section{margin-bottom:22px;border:1px solid #e8ecf5;border-radius:10px;overflow:hidden}
-  .section-head{background:#f8f9ff;border-bottom:1px solid #e8ecf5;padding:10px 16px;display:flex;align-items:center;gap:8px}
-  .section-head h3{font-size:14px;font-weight:700;color:#1a1a2e}
-  .section-icon{font-size:16px}
-  .section-body{padding:14px 18px}
-  /* Definition boxes */
-  .def-box{background:#fff8e1;border-left:4px solid #f59e0b;border-radius:0 6px 6px 0;padding:8px 14px;margin:8px 0;font-size:13px}
-  .def-box strong{color:#92400e}
-  /* Formula box */
-  .formula-box{background:#eef2ff;border:1px solid #c7d2fe;border-radius:8px;padding:10px 16px;margin:10px 0;font-family:monospace;font-size:13px;color:#312e81}
-  /* Example box */
-  .eg-box{background:#f0fdf4;border-left:4px solid #22c55e;border-radius:0 6px 6px 0;padding:8px 14px;margin:8px 0;font-size:13px}
-  .eg-box strong{color:#15803d}
-  /* Insight box */
-  .insight-box{background:#fdf4ff;border-left:4px solid #a855f7;border-radius:0 6px 6px 0;padding:8px 14px;margin:8px 0;font-size:13px}
-  .insight-box strong{color:#7e22ce}
-  /* Lists */
-  ul{padding-left:20px;margin:6px 0}
-  ul li{margin:4px 0}
-  ol{padding-left:20px;margin:6px 0}
-  ol li{margin:4px 0}
-  /* Tables */
-  table{
-  width:100%;
-  border-collapse:collapse;
-  font-size:12.5px;
-  margin:10px 0;
-  display:block;
-  overflow-x:auto;
-}
-  th{background:#4361ee;color:#fff;padding:7px 10px;text-align:left;font-weight:600}
-  td{padding:6px 10px;border-bottom:1px solid #e8ecf5}
-  tr:nth-child(even) td{background:#f8f9ff}
-  /* Tags */
-  .tag{display:inline-block;background:#dde5ff;color:#3730a3;font-size:11px;padding:2px 8px;border-radius:12px;margin:2px;font-weight:600}
-  .tag.red{background:#fee2e2;color:#b91c1c}
-  .tag.green{background:#dcfce7;color:#166534}
-  .tag.yellow{background:#fef9c3;color:#854d0e}
-  /* Divider */
-  .divider{border:none;border-top:2px dashed #e8ecf5;margin:30px 0}
-  /* CHEATSHEET */
-  .cheat-wrap{background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);color:#fff;border-radius:12px;padding:24px 28px;margin-top:36px}
-  .cheat-wrap h2{font-size:18px;font-weight:900;color:#ffd166;margin-bottom:18px;text-align:center;letter-spacing:1px}
-  .cheat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .cheat-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:12px 14px}
-  .cheat-card h4{font-size:12px;font-weight:700;color:#ffd166;text-transform:uppercase;margin-bottom:8px;letter-spacing:.5px}
-  .cheat-card ul{padding-left:16px}
-  .cheat-card ul li{font-size:11.5px;color:#e0e0f0;margin:3px 0}
-  .cheat-formula{font-family:monospace;background:rgba(255,255,255,.12);border-radius:6px;padding:6px 10px;font-size:12px;color:#a5f3fc;margin:6px 0}
-  /* Print */
-  @media print{
-    body{padding:16px 20px}
-    .toc a{background:#eee;color:#000}
-    .week-badge{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-    .cheat-wrap{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
   }
-  p{margin:5px 0}
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  @media(max-width:600px){.two-col,.cheat-grid{grid-template-columns:1fr}}
+
+  .endterm-wrapper{
+    max-width:900px;
+    margin:0 auto;
+    padding:20px;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    color:#333;
+    line-height:1.7;
+  }
+
+  .content-card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:30px 40px;
+    margin-bottom:24px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    border:1px solid #f0f0f0;
+  }
+
+  .main-title{
+    margin-top:0;
+    margin-bottom:8px;
+    font-size:2.2em;
+    font-weight:700;
+    color:#111;
+  }
+
+  .subtitle{
+    margin:0;
+    color:#666;
+    font-size:1.05em;
+    font-weight:500;
+  }
+
+  .section-title{
+    margin-top:0;
+    font-size:1.4em;
+    color:#222;
+    border-bottom:1px solid #eaeaea;
+    padding-bottom:12px;
+    margin-bottom:20px;
+    font-weight:600;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:12px 0;
+    display:block;
+    overflow-x:auto;
+    font-size:13px;
+  }
+
+  th{
+    background:#4361ee;
+    color:white;
+    padding:8px 10px;
+    text-align:left;
+  }
+
+  td{
+    padding:8px 10px;
+    border-bottom:1px solid #ececec;
+  }
+
+  tr:nth-child(even){
+    background:#fafafa;
+  }
+
+  .week-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:36px 0 18px;
+  }
+
+  .week-badge{
+    background:linear-gradient(135deg,#4361ee,#7209b7);
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    padding:4px 12px;
+    border-radius:20px;
+    letter-spacing:.5px;
+  }
+
+  .week-title{
+    font-size:20px;
+    font-weight:700;
+    color:#1a1a2e;
+  }
+
+  .section{
+    margin-bottom:22px;
+    border:1px solid #e8ecf5;
+    border-radius:10px;
+    overflow:hidden;
+  }
+
+  .section-head{
+    background:#f8f9ff;
+    border-bottom:1px solid #e8ecf5;
+    padding:10px 16px;
+  }
+
+  .section-head h3{
+    font-size:15px;
+    color:#1a1a2e;
+  }
+
+  .section-body{
+    padding:16px 18px;
+  }
+
+  .def-box{
+    background:#fff8e1;
+    border-left:4px solid #f59e0b;
+    border-radius:0 6px 6px 0;
+    padding:10px 14px;
+    margin:10px 0;
+  }
+
+  .formula-box{
+    background:#eef2ff;
+    border:1px solid #c7d2fe;
+    border-radius:8px;
+    padding:12px 16px;
+    margin:12px 0;
+    font-family:monospace;
+    color:#312e81;
+  }
+
+  .eg-box{
+    background:#f0fdf4;
+    border-left:4px solid #22c55e;
+    border-radius:0 6px 6px 0;
+    padding:10px 14px;
+    margin:10px 0;
+  }
+
+  .insight-box{
+    background:#fdf4ff;
+    border-left:4px solid #a855f7;
+    border-radius:0 6px 6px 0;
+    padding:10px 14px;
+    margin:10px 0;
+  }
+
+  ul,ol{
+    padding-left:20px;
+    margin:8px 0;
+  }
+
+  li{
+    margin:6px 0;
+  }
+  .toc{
+  background:#f0f4ff;
+  border-left:4px solid #4361ee;
+  border-radius:8px;
+  padding:16px 20px;
+  margin-bottom:32px;
+}
+
+.toc h2{
+  font-size:13px;
+  font-weight:700;
+  color:#4361ee;
+  margin-bottom:10px;
+}
+
+.toc a{
+  display:inline-block;
+  color:#1a1a2e;
+  text-decoration:none;
+  font-size:12.5px;
+  margin:2px 14px 2px 0;
+  padding:2px 8px;
+  background:#dde5ff;
+  border-radius:4px;
+}
+
+.divider{
+  border:none;
+  border-top:2px dashed #e8ecf5;
+  margin:30px 0;
+}
+
+.cheat-wrap{
+  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  color:#fff;
+  border-radius:12px;
+  padding:24px 28px;
+  margin-top:36px;
+}
+
+.cheat-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.cheat-card{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:8px;
+  padding:12px 14px;
+}
+
+.cheat-card h4{
+  color:#ffd166;
+  margin-bottom:8px;
+}
+
+.cheat-formula{
+  font-family:monospace;
+  background:rgba(255,255,255,.12);
+  border-radius:6px;
+  padding:6px 10px;
+  margin:6px 0;
+}
+
+.two-col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+@media(max-width:600px){
+  .two-col,.cheat-grid{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 
 <div class="endterm-wrapper">
-<h1>📚 End-Term Exam Notes — Week 9 to 12</h1>
-<p class="subtitle">HR, Fintech, Analytics, A/B Testing, Credit Risk &amp; Business Operations | Comprehensive Study Guide</p>
+
+  <!-- TITLE CARD -->
+
+  <div class="content-card">
+    <h1 class="main-title">End-Term Notes</h1>
+    <p class="subtitle">Weeks 9 through 12</p>
+  </div>
+
+  <!-- TOPICS CARD -->
+
+  <div class="content-card">
+    <h2 class="section-title">📚 Topics Covered</h2>
+
+
+<ul style="line-height:1.9; font-size:1.02em;">
+  <li><strong>Week 9:</strong> HR Analytics, Recruitment, Manpower Forecasting</li>
+  <li><strong>Week 10:</strong> Fintech, UPI, BNPL, Behavioral Economics</li>
+  <li><strong>Week 11:</strong> A/B Testing, Product Analytics, Credit Risk</li>
+  <li><strong>Week 12:</strong> Business Operations, Functional Departments, Spreadsheet Processing</li>
+</ul>
+
+
+  </div>
 
 <!-- TOC -->
 <div class="toc">
@@ -673,5 +852,4 @@ permalink: /endterm/
   <p style="text-align:center;font-size:11px;color:#aaa;margin-top:18px">📄 To save as PDF: Press Ctrl+P (Cmd+P on Mac) → Save as PDF → Set margins to Minimum</p>
 </div>
 
-</div>
 </div>
