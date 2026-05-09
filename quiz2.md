@@ -12,17 +12,6 @@ permalink: /quiz2/
     <p style="margin: 0; color: #666; font-size: 1.1em; font-weight: 500;">Weeks 5 through 8</p>
   </div>
 
-  <!-- Section 2: Syllabus / Topics -->
-  <div style="background: #ffffff; border-radius: 12px; padding: 30px 40px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); border: 1px solid #f0f0f0;">
-    <h2 style="margin-top: 0; font-size: 1.4em; color: #222; border-bottom: 1px solid #eaeaea; padding-bottom: 12px; margin-bottom: 20px; font-weight: 600;">📚 Topics Covered</h2>
-    <ul style="margin: 0; padding-left: 20px; color: #444; line-height: 1.8; font-size: 1.05em;">
-      <li><strong>Week 5:</strong> Advanced SQL Functions & Subqueries</li>
-      <li><strong>Week 6:</strong> Data Warehousing Concepts</li>
-      <li><strong>Week 7:</strong> ETL (Extract, Transform, Load) Processes</li>
-      <li><strong>Week 8:</strong> NoSQL Databases & Modern Alternatives</li>
-    </ul>
-  </div>
-
   <!-- Section 3: Embedded PDF Viewer -->
   <div style="background: #ffffff; border-radius: 12px; padding: 25px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); border: 1px solid #f0f0f0; text-align: center;">
     
